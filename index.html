@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-</head>
+    <style>
+    button{
+        font-size: 20pt;
+     
+    }
+    </style>
 <body>
-    <h1> Inserindo um botão</h1>
-    <button onclick="clicou()"> Clique! </button>
+    <button onclick="inicio()"> clique para começar</button>
     <script>
-        function clicou (){
-            window.alert("voce clicou no botão")
+        function inicio(){
+            let nome= window.prompt('qual o seu nome?')
+            window.alert(`ola, ${nome}! é um prazer te conhecer`)
         }
     </script>
+    
 </body>
 </html>
